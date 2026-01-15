@@ -32,7 +32,29 @@ main:
     # add x6,x6,x1
     # add x6,x6,x2
     # add x6,x6,x3
-    
+
+    # Task 4a
+
+    # li x10, 0x78786464
+    # li x11, 0xA8A81919
+
+    # #4a (i)
+    # li x15,0x100
+    # sw x10,0(x15)
+
+    # #(ii)
+    # li x16,0x1F0
+    # sw x11, 0(x16)
+
+    # #(iii)
+    # lhu x12,0x100(0)
+
+    # #(iv)
+    # lh x13,0x1F0(0)
+
+    # #(v)
+    # lb x14,0x1F0(0)
+
 end:
     j end
 

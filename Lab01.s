@@ -55,6 +55,31 @@ main:
     # #(v)
     # lb x14,0x1F0(0)
 
+    # Task 4b:
+    # li x10, 0x100      # a
+    # li x11, 0x200      # b
+    # li x12, 0x300      # c
+
+    # lb  x13, 0(x10)    # a[0]
+    # lh  x14, 0(x11)    # b[0]
+    # add x15, x13, x14
+    # sw  x15, 0(x12)    # c[0]
+
+    # lb  x13, 1(x10)    # a[1]
+    # lh  x14, 2(x11)    # b[1]
+    # add x15, x13, x14
+    # sw  x15, 4(x12)    # c[1]
+
+    # lb  x13, 2(x10)    # a[2]
+    # lh  x14, 4(x11)    # b[2]
+    # add x15, x13, x14
+    # sw  x15, 8(x12)    # c[2]
+
+    # lb  x13, 3(x10)    # a[3]
+    # lh  x14, 6(x11)    # b[3]
+    # add x15, x13, x14
+    # sw  x15, 12(x12)   # c[3]
+
 end:
     j end
 
